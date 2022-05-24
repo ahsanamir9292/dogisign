@@ -1,8 +1,8 @@
 {
-  "name": "signdocs",
+  "name": "dogisign",
   "repository": {
     "type": "git",
-    "url": "https://github.com/philgresh/signdocs.git"
+    "url": "git+https://github.com/ahsanamir9292/dogisign.git"
   },
   "engines": {
     "node": "12.5.0",
@@ -107,5 +107,18 @@
       "shortStats": true,
       "verbose": true
     }
-  }
+  },
+  "description": "![Splash banner](https://user-images.githubusercontent.com/46543327/91600157-530df080-e91c-11ea-85d2-0b7e10247dfb.png)",
+  "bugs": {
+    "url": "https://github.com/ahsanamir9292/dogisign/issues"
+  },
+  "homepage": "https://github.com/ahsanamir9292/dogisign#readme",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
 }
