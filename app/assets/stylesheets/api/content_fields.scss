@@ -1,0 +1,66 @@
+// Place all the styles related to the Api/ContentFields controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content-field {
+  position: absolute;
+  z-index: 2;
+  border: 1px solid transparent;
+
+  &.fillable {
+    border: 1px solid var(--light-gray);
+    border-radius: 0.25rem;
+    background-color: #fff8;
+    box-shadow: var(--box-shadow-1);
+
+    &.signable {
+      cursor: pointer;
+      box-shadow: var(--box-shadow-1), 0px 0px 6px 3px rgba(255, 255, 0, 0.7);
+    }
+  }
+
+  & .content-field-description {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: var(--dark-main-blue);
+    font-family: var(--default-font-family);
+    font-weight: bold;
+    font-size: 0.8rem;
+    // text-overflow: ellipsis;
+    //   overflow: hidden;
+    padding: 0 5px;
+
+    & .drag-handle {
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      z-index: 3;
+      color: inherit;
+      cursor: pointer;
+      font-size: inherit;
+
+      &:hover {
+        color: var(--call-to-action-blue);
+        // transform: translate(-1rem, -1rem);  // Nice idea but screws up positioning
+        // padding: 0.5rem;
+      }
+    }
+
+    & button.close.flat {
+      background-color: transparent;
+      position: absolute;
+      right: -17px;
+      top: -15px;
+      color: inherit;
+      font-size: inherit;
+
+      &:hover {
+        color: var(--warning-red);
+      }
+    }
+  }
+}
