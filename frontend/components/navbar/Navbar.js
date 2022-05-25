@@ -6,12 +6,28 @@ import SignedInRightNavMenu from './SignedInRightNavMenu';
 
 const signedInLinksLeft = [
   {
+    to: '/',
+    title: 'Home',
+  },
+  {
     to: '/documents',
-    title: 'Documents',
+    title: 'Manage',
   },
   {
     to: '/profile',
     title: 'Profile',
+  },
+  {
+    to: '/profile',
+    title: 'Templates',
+  },
+  {
+    to: '/profile',
+    title: 'Reports',
+  },
+  {
+    to: '/profile',
+    title: 'Settings',
   },
 ];
 
@@ -59,7 +75,7 @@ const Navbar = ({ currentUser, signoutUser }) => {
     <nav>
       <div className="flex-container-left">
         <h1>
-          <Link to={mastheadLinkTo}>SignDocs</Link>
+          <Link to={mastheadLinkTo}>DogiSign</Link>
         </h1>
         <ul className="nav-links">
           <LeftLinks links={navLinksLeft} />

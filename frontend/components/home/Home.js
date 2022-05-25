@@ -1,7 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { SvgLoader } from 'react-svgmt';
+import { SvgLoader, SvgProxy  } from 'react-svgmt';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import RecentActivity from './RecentActivity';
